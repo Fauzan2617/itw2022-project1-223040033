@@ -150,11 +150,11 @@
         <div class="bagian-contact">
           <h1 class="sub-title">Contact Me</h1>
           <div class="contact-input">
-            <form name="submit-to-google-sheet">
+            <form name="portofolio-contact-form">
               <center>
                 <input
                   type="text"
-                  name="Name"
+                  name="Nama"
                   placeholder="Your Name"
                   required
                 />
@@ -169,7 +169,7 @@
               </center>
               <center>
                 <textarea
-                  name="Message"
+                  name="Deskripsi"
                   rows="6"
                   placeholder="Your message"
                 ></textarea>
@@ -202,5 +202,17 @@
       </div>
     </div>
     <script src="js/index.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbw3jCjet9Fn508ciy-8HNSSy2WEaJYfEgIyLivsB4vmced3M4ji52QcninxEc8tv--QXQ/exec";
+      const form = document.forms["portofolio-contact-form"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
