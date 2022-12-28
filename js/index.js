@@ -1,18 +1,16 @@
 // Bagian Navbar
-const burger = document.querySelector(".burger");
-const sidebar = document.querySelector(".sidebar");
-const bgSidebar = document.querySelector(".bg-sidebar");
+let menuBar = document.querySelector(".menu-bar");
+let menuNav = document.querySelector(".menu");
 
-burger.addEventListener("click", function () {
-  this.classList.toggle("change");
-  sidebar.classList.toggle("change");
-  bgSidebar.classList.toggle("change");
+menuBar.addEventListener("click", () => {
+  menuNav.classList.toggle("menu-active");
 });
 
-bgSidebar.addEventListener("click", function () {
-  this.classList.remove("change");
-  sidebar.classList.remove("change");
-  burger.classList.remove("change");
+let navBar = document.querySelector(".navbar");
+window.addEventListener("scroll", () => {
+  console.log(window.scrollY);
+  let windowPosition = window.scrollY > 0;
+  navBar.classList.toggle("scroll-active", windowPosition);
 });
 
 // Bagian Judul
