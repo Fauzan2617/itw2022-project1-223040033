@@ -7,6 +7,7 @@
 body {
   font-family: "Work Sans", sans-serif;
   background-color: #fefefe;
+  height: 1000px;
 }
 
 /* wraper */
@@ -191,7 +192,8 @@ section h3::after {
   flex-wrap: wrap;
   justify-content: space-around;
   height: 750px;
-  box-shadow: 1px 0 10px black;
+  box-shadow: 1px 0 20px black;
+  border-bottom: 3px dashed black;
 }
 
 .container2 img {
@@ -306,11 +308,12 @@ html {
   margin: 90px 10px 0 10px;
   flex: 1;
   transition: all 1s;
+  box-shadow: 1px 1px 10px black;
 }
 
 .project .boxProject:hover {
-  transform: scale(1.1) translate(0, 20%);
-  transition: all 1s;
+  transform: scale(1.1) translate(0, 20%) !important;
+  transition: all 1s !important;
 }
 
 .project .card {

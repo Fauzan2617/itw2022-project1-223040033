@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portofolio</title>
-
+    <!-- Library Unicons -->
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
+    <!-- Akhir Library Unicons -->
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css"
@@ -24,7 +27,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Akhir Font Awesome -->
+
+    <!-- AOS JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="icon" href="img/Banner img.png" />
+    <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -66,13 +75,20 @@
     <!-- bagian about -->
     <div class="container2" id="my-profil">
       <img src="img/img-story1.png" alt="Poto Sendiri" />
-      <div class="flexbox-item flexbox-item1">
+      <div
+        class="flexbox-item flexbox-item1"
+        data-aos="fade-left"
+        data-aos-offset="400"
+        data-aos-delay="200"
+        data-aos-duration="1500"
+      >
         <h2>
           I’m Fauzan Dwi, a Product Designer working remotely for Help Scout on
           their Web Product in sunny Indonesia, Bandung. I’ve spent the past 12+
           years working across different areas of digital design; front-end
           development, email design, marketing site pages.
         </h2>
+        <br />
         <br />
         <br />
         <p>
@@ -86,7 +102,13 @@
 
     <!-- bagian skills -->
     <section id="skills">
-      <div class="container">
+      <div
+        class="container"
+        data-aos="fade-down-right"
+        data-aos-offset="400"
+        data-aos-delay="200"
+        data-aos-duration="1500"
+      >
         <h3>Skills</h3>
         <h4>HTML</h4>
         <div class="bar">
@@ -118,7 +140,13 @@
     <!-- bagian project -->
     <div class="project" id="project">
       <div class="container">
-        <div class="boxProject">
+        <div
+          class="boxProject"
+          data-aos="flip-left"
+          data-aos-offset="400"
+          data-aos-delay="200"
+          data-aos-duration="1500"
+        >
           <div class="card p1"></div>
           <div class="box">
             <p>Web Shop Tupperware 2022</p>
@@ -127,14 +155,26 @@
             </button>
           </div>
         </div>
-        <div class="boxProject">
+        <div
+          class="boxProject"
+          data-aos="zoom-in-down"
+          data-aos-offset="400"
+          data-aos-delay="200"
+          data-aos-duration="1500"
+        >
           <div class="card p2"></div>
           <div class="box">
             <p>Web Artikel Robot</p>
             <button><a href="#">Selengkapnya!</a></button>
           </div>
         </div>
-        <div class="boxProject">
+        <div
+          class="boxProject"
+          data-aos="flip-right"
+          data-aos-offset="400"
+          data-aos-delay="200"
+          data-aos-duration="1500"
+        >
           <div class="card p3"></div>
           <div class="box">
             <p>Portofolio</p>
@@ -201,7 +241,14 @@
         </div>
       </div>
     </div>
-    <script src="js/index.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Contact Form JS -->
     <script>
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbw3jCjet9Fn508ciy-8HNSSy2WEaJYfEgIyLivsB4vmced3M4ji52QcninxEc8tv--QXQ/exec";
@@ -214,5 +261,8 @@
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
+
+    <!-- MY JS -->
+    <script src="js/index.js"></script>
   </body>
 </html>
