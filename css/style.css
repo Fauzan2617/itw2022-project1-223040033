@@ -10,6 +10,7 @@ body {
   height: 1000px;
 }
 
+/* Navbar */
 /* wraper */
 .navbar {
   width: 100%;
@@ -57,7 +58,7 @@ body {
   text-decoration: none;
   color: lightskyblue;
   padding: 10px 15px;
-  border-radius: 10px;
+  border-radius: 10px black;
   transition: all 1s;
 }
 
@@ -130,7 +131,7 @@ body {
 }
 /* Akhir bagian responsive Navbar */
 
-/* Bagian Home */
+/* Bagian Home/Banner */
 .banner {
   background-color: #1f68b6;
   padding: 150px 0;
@@ -209,6 +210,7 @@ section h3::after {
   min-height: 400px;
   align-self: center;
 }
+/* Akhir Bagian About */
 
 /* Bagian Skills */
 #skills,
@@ -352,6 +354,7 @@ html {
   background-image: url("../img/Portfolio.png");
   background-size: cover;
 }
+/* Akhir Bagian Project */
 
 /* Bagian-contact */
 #contact {
@@ -438,3 +441,4 @@ form .btn {
 html {
   scroll-behavior: smooth;
 }
+/* Akhir Bagian Contact */
